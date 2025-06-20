@@ -2,11 +2,11 @@
   {
     "name": "Sample Test",
     "filename": "test1.json",
-    "url": "https://raw.githubusercontent.com/librexam/testRepo/main/test1.json"
+    "url": "https://raw.githubusercontent.com/librexam/testRepo/main/tests/test1.json"
   },
   {
     "name": "Sample Test 2",
     "filename": "test2.json",
-    "url": "https://raw.githubusercontent.com/librexam/testRepo/main/test2.json"
+    "url": "https://raw.githubusercontent.com/librexam/testRepo/main/tests/test2.json"
   }
 ]

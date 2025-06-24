@@ -1,0 +1,90 @@
+{
+  "title": "Mechanical Engineering",
+  "duration": 3600,
+  "author": "Debaditya Majumder",
+  "description": "Prepare to be ratioed by gender",
+  "subjects": [
+    {
+      "name": "Build a gas compressor",
+      "sections": [
+        {
+          "name": "To think like an engineer",
+          "posM": 4,
+          "negM": 0,
+          "questions": [
+            {
+              "type": "NUM",
+              "image": "https://i.ibb.co/mCL7Xt46/image.png",
+              "text": "In large gas-compression stations (e.g., on a natural gas pipeline), compression is done in several stages as illustrated. After each stage, the gas is cooled at constant pressure back to the inlet temperature ($T_1 = 300\\,\\text{K}$). A station compresses 10 moles of methane from $P_1$ to $P_{N+1}$ in one isentropic stage. What is the total work done (in kJ)? (Given: $\\frac{P_{N+1}}{P_1} = 40$, $\\gamma = 1.31$, $R = 8.314$ SI units)",
+              "answer": 147
+            },
+            {
+              "type": "NUM",
+              "image": "https://i.ibb.co/mCL7Xt46/image.png",
+              "text": "In a 10-stage gas compressor, what is the pressure ratio $\\frac{P_4}{P_2}$ required to minimize work? (Given: $\\frac{P_{N+1}}{P_1} = 40$, $\\gamma = 1.31$)",
+              "answer": 2
+            },
+            {
+              "type": "NUM",
+              "image": "https://i.ibb.co/mCL7Xt46/image.png",
+              "text": "In a 10-stage gas compressor, what is the total work done (in kJ) if the outlet pressures are optimally chosen to minimize work? (Given: $\\frac{P_{N+1}}{P_1} = 40$, $\\gamma = 1.31$, $R = 8.314$)",
+              "answer": 96
+            },
+            {
+              "type": "NUM",
+              "image": "https://i.ibb.co/mCL7Xt46/image.png",
+              "text": "What is the percentage increase in work done if the compression is carried out in a single isentropic stage instead of 10 optimized stages? (Given: $\\frac{P_{N+1}}{P_1} = 40$, $\\gamma = 1.31$)",
+              "answer": 53
+            },
+            {
+              "type": "NUM",
+              "image": "https://i.ibb.co/mCL7Xt46/image.png",
+              "text": "If the number of stages approaches a very large number (e.g., $N \\gg 10000$), what is the work done in such a case (in kJ)? (Given: $\\frac{P_{N+1}}{P_1} = 40$, $\\gamma = 1.31$, $R = 8.314$)",
+              "answer": 92
+            },
+            {
+              "type": "NUM",
+              "image": "https://i.ibb.co/mCL7Xt46/image.png",
+              "text": "What is the percentage increase in work done if compression is done in a single isentropic stage instead of an idealized process with infinite stages? (Given: $\\frac{P_{N+1}}{P_1} = 40$, $\\gamma = 1.31$)",
+              "answer": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "To think like an undergrad",
+      "sections": [
+        {
+          "name": "Thermodynamics",
+          "posM": 4,
+          "negM": 1,
+          "questions": [
+            {
+              "type": "SMCQ",
+              "text": "A fan that consumes 20 W of electric power is claimed to discharge air from a ventilated room at 1.0 kg/s. What should the minimum discharge velocity be to validate this claim?",
+              "options": ["9.8 m/s", "19.6 m/s", "6.3 m/s", "12.6 m/s"],
+              "answer": 2
+            },
+            {
+              "type": "SMCQ",
+              "text": "You are in a breezy room at 20°C. If your body has an exposed area of 1.6 m² and an outer surface temperature of 29°C, with a heat transfer coefficient of 6 W/m²·°C, what is the total rate of heat transfer from your body?",
+              "options": ["86.4", "81.7", "170.3", "168.1"],
+              "answer": 4
+            },
+            {
+              "type": "NUM",
+              "text": "Saturated steam at 1 atm condenses on a vertical plate at 90°C. The condensate drips into a 5L vessel at the same temperature. Given a condensation heat transfer rate of 1150 kJ/s, latent heat of vaporization = 2257×10³, and water's specific heat capacity = 4300, how often (in seconds) should the vessel be replaced to prevent overflow?",
+              "answer": 10
+            },
+            {
+              "type": "NUM",
+              "text": "Two bodies A ($r_1$ = 1000 km) and B ($r_2$ = 4000 km) are separated by $d = \\sqrt{5.6\\pi} \\times 10^{11}$ km. B is at 1000 K and A is at 0 K. A reflects $\\alpha = 0.8$ of incoming radiation. B reflects 0.8 and absorbs 0.2 of incident radiation. How much heat per second does A receive? (Use Stefan–Boltzmann constant $\\sigma = 5.6 \\times 10^{-8}$ SI units)",
+              "answer": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

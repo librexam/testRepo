@@ -3,6 +3,8 @@
     "name": "Sample Test",
     "filename": "test1.json",
     "author": "Sayak",
+    "duration": 3600,
+    "tags": ["physics","mathematics","maths","jee"],
     "description": "A sample Physics, Maths test",
     "url": "https://raw.githubusercontent.com/librexam/testRepo/main/tests/test1.json"
   }

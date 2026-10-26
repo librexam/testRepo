@@ -1,11 +1,18 @@
 [
   {
-    "name": "Sample Test",
+    "name": "LibrExam Sample Test",
     "filename": "test1.json",
     "author": "Sayak",
-    "duration": 3600,
-    "tags": ["physics","mathematics","maths","jee"],
-    "description": "A sample Physics, Maths test",
+    "duration": 5400,
+    "tags": [
+      "sample",
+      "physics",
+      "chemistry",
+      "mathematics",
+      "jee",
+      "jee-advanced"
+    ],
+    "description": "A JEE Advanced style mock across Physics, Chemistry and Mathematics, covering every LibrExam question type and marking mode, with full worked solutions.",
     "url": "https://raw.githubusercontent.com/librexam/testRepo/main/tests/test1.json"
   }
 ]

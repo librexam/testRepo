@@ -1,67 +1,226 @@
 {
-  "title": "Sample Test",
-  "duration": 3600,
+  "title": "LibrExam Sample Test",
   "author": "Sayak",
-  "description": "A sample test showcasing the features of LibrExam",
+  "description": "A JEE Advanced style mock across Physics, Chemistry and Mathematics: single and multiple correct MCQs, numerical answers with tolerance, partial marking modes, LaTeX and full worked solutions.",
+  "duration": 5400,
   "subjects": [
     {
       "name": "Physics",
       "sections": [
         {
-          "name": "Section 1",
+          "name": "Section A: Single Correct",
           "posM": 4,
           "negM": 1,
           "questions": [
             {
               "type": "SMCQ",
-              "image": "https://i.ibb.co/svfYP7mR/6661f97fda605edec06c8c93-AD-4n-Xf-Qz-Rb-VA21a-Vj-Byl-I7-I3-LKDHU1-WDGm-Si8y-Uxihs-PPVe7om-P1-N39f-Kz.png",
-              "text": "What is the standard acceleration due to gravity on Earth? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et interdum enim, nec posuere orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus odio vel nunc auctor blandit. Morbi eget dui in ex mattis scelerisque a nec orci. Nam quis neque a leo hendrerit lacinia. Nulla vel pharetra orci, nec gravida nisl. In venenatis felis dui, at porta tellus molestie vel. Cras in risus et lectus pulvinar sollicitudin sollicitudin vel erat. Suspendisse mollis ultrices lorem id laoreet. Praesent vel velit in sapien lacinia fermentum accumsan ut felis. Phasellus non posuere enim. Nunc sed volutpat est. Nunc id gravida urna. Fusce semper interdum rutrum. Vestibulum id nisl ac nunc elementum rhoncus. Cras vel massa dapibus, consequat neque ac, consequat dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nunc nunc, faucibus ac sapien in, hendrerit dignissim sapien. Sed venenatis metus id odio iaculis, eu auctor ante lobortis. Cras interdum ac nulla sit amet suscipit. Aenean dapibus massa sed ante pharetra vehicula. Cras condimentum velit vel magna porta malesuada. Nam vestibulum quis risus sed luctus. In rutrum bibendum orci nec rhoncus.",
-              "options": ["9.8 m/s²", "10 m/s²", "9.6 m/s²", "8.9 m/s²"],
+              "text": "A solid sphere of mass $M$ and radius $R$ is placed at rest on a long incline that makes an angle $\\theta$ with the horizontal. The coefficient of static friction between the sphere and the incline is $\\mu$, and the coefficient of kinetic friction is slightly smaller. The sphere is released and the incline is fixed to the ground. If the sphere is to roll down without slipping at any instant, what is the minimum value of $\\mu$ required? (Ignore rolling resistance and air drag.)",
+              "options": [
+                "$\\frac{2}{7}\\tan\\theta$",
+                "$\\frac{2}{5}\\tan\\theta$",
+                "$\\frac{5}{7}\\tan\\theta$",
+                "$\\frac{1}{3}\\tan\\theta$"
+              ],
               "answer": 0,
-              "solution": "Very obvious. See this sample image I have put in.",
-              "simage": "https://i.ibb.co/svfYP7mR/6661f97fda605edec06c8c93-AD-4n-Xf-Qz-Rb-VA21a-Vj-Byl-I7-I3-LKDHU1-WDGm-Si8y-Uxihs-PPVe7om-P1-N39f-Kz.png"
+              "solution": "For rolling without slipping, $Mg\\sin\\theta - f = Ma$ and $fR = I\\alpha = \\frac{2}{5}MR^2 \\cdot \\frac{a}{R}$. So $f = \\frac{2}{5}Ma$, which gives $$a = \\frac{5}{7}g\\sin\\theta, \\qquad f = \\frac{2}{7}Mg\\sin\\theta.$$ Static friction can supply at most $\\mu N = \\mu Mg\\cos\\theta$, so we need $\\mu \\ge \\frac{2}{7}\\tan\\theta$."
             },
             {
-              "type": "MMCQ",
-              "text": "Which of the following are scalar quantities?",
-              "options": ["Speed", "Velocity", "Distance", "Displacement"],
-              "answer": [0, 2]
+              "type": "SMCQ",
+              "text": "A non-conducting solid sphere of mass $M$ and radius $R$ carries a total charge $Q$. Both the mass and the charge are distributed uniformly throughout its volume. The sphere is set spinning about a diameter with a constant angular velocity $\\omega$, in a region with no external fields. If $\\mu$ is the magnitude of its magnetic dipole moment and $L$ the magnitude of its angular momentum about the spin axis, what is the ratio $\\mu / L$?",
+              "options": [
+                "$\\frac{Q}{2M}$",
+                "$\\frac{Q}{M}$",
+                "$\\frac{2Q}{5M}$",
+                "$\\frac{5Q}{2M}$"
+              ],
+              "answer": 0,
+              "solution": "Split the sphere into small elements of mass $dm$ and charge $dq$. Since both are uniform, $dq/dm = Q/M$ everywhere. Each element moves in a circle and acts as a current loop with $d\\mu = \\frac{dq}{2\\,dm}\\,dL$. Summing over the whole body gives $$\\frac{\\mu}{L} = \\frac{Q}{2M},$$ for any shape, as long as the charge-to-mass ratio is the same everywhere."
             },
             {
-              "type": "NUM",
-              "text": "A body moves with uniform acceleration of 2 m/s² for 5 seconds. What is the final velocity if initial velocity was 3 m/s?",
-              "answer": 13
+              "type": "SMCQ",
+              "text": "A capacitor of capacitance $C$ is charged to a potential difference $V_0$ and then disconnected from the battery. It is connected through a resistor of resistance $R$ to a second, identical capacitor that is initially uncharged, and the circuit is left until all currents have stopped. The connecting wires have negligible resistance and inductance, and no energy is radiated. What is the total heat dissipated in the resistor?",
+              "options": [
+                "$\\frac{1}{4}CV_0^2$",
+                "$\\frac{1}{2}CV_0^2$",
+                "$\\frac{1}{8}CV_0^2$",
+                "It depends on the value of $R$"
+              ],
+              "answer": 0,
+              "solution": "Charge is conserved: $CV_0 = 2CV_f$, so $V_f = V_0/2$. The initial energy is $\\frac{1}{2}CV_0^2$. The final energy is $2 \\cdot \\frac{1}{2}C\\left(\\frac{V_0}{2}\\right)^2 = \\frac{1}{4}CV_0^2$. The difference, $\\frac{1}{4}CV_0^2$, is lost as heat. $R$ only sets how fast this happens (time constant $RC/2$), not how much heat is produced."
             },
             {
-              "type": "NUM",
-              "image": "https://i.ibb.co/KxmW9FMz/Screenshot.png",
-              "text": "A circular ring of radius $a$ is fixed to a vertical shaft $AB$ at $O$. The plane of the ring is inclined at $60^\\circ$ to the vertical so that the included angle $COB$ is $60^\\circ$, where $C$ is the center of the ring. A particle $P$ of mass $m$ is free to slide without friction on the ring. The position of the particle is measured by the included angle $OCP$, denoted $\\theta$ as shown. The shaft is driven at constant angular velocity $\\Omega$. Find the speed of $P$ in terms of $\\theta$ and $\\dot\\theta$, given $a = 1$, $\\Omega = 2$, $\\alpha = 60^\\circ$, and $\\dot\\theta = 1$. (Final answer should be a decimal rounded to 3 significant digits.)",
-              "answer": 1.414
+              "type": "SMCQ",
+              "text": "One mole of an ideal monatomic gas is taken through a quasi-static process in which its pressure is directly proportional to its volume, i.e. $P = kV$ for some positive constant $k$. The gas starts at temperature $T_0$ and expands until its volume has doubled. Throughout the process, what is the molar heat capacity of the gas? ($R$ is the universal gas constant.)",
+              "options": [
+                "$2R$",
+                "$\\frac{3}{2}R$",
+                "$\\frac{5}{2}R$",
+                "$3R$"
+              ],
+              "answer": 0,
+              "solution": "$P = kV$ is a polytropic process $PV^{n} = \\text{const}$ with $n = -1$. For a polytropic process, $$C = C_V + \\frac{R}{1-n} = \\frac{3}{2}R + \\frac{R}{2} = 2R.$$ Check: $W = \\int P\\,dV = \\frac{k}{2}(V_2^2 - V_1^2) = \\frac{1}{2}R\\,\\Delta T$, and $Q = \\Delta U + W = \\frac{3}{2}R\\,\\Delta T + \\frac{1}{2}R\\,\\Delta T = 2R\\,\\Delta T$."
             }
           ]
         },
         {
-          "name": "Section 2",
+          "name": "Section B: Multiple Correct",
+          "posM": 4,
+          "negM": 2,
+          "partial": "perOption",
+          "questions": [
+            {
+              "type": "MMCQ",
+              "text": "An artificial satellite of mass $m$ moves in a circular orbit of radius $r$ around the Earth, well above the surface but still inside the very thin upper atmosphere. Air drag is extremely weak, so the orbit stays nearly circular at every instant while the satellite slowly loses mechanical energy over many revolutions. Which of the following statements are correct as this slow loss continues?",
+              "options": [
+                "The orbital radius decreases",
+                "The orbital speed increases",
+                "The angular momentum of the satellite about the Earth's centre decreases",
+                "The total mechanical energy of the satellite increases"
+              ],
+              "answer": [
+                0,
+                1,
+                2
+              ],
+              "solution": "For a circular orbit, $E = -\\frac{GMm}{2r}$. Losing energy makes $E$ more negative, so $r$ decreases. The speed $v = \\sqrt{GM/r}$ then increases: drag takes away energy, but gravity does more positive work as the satellite falls inward. The angular momentum $L = m\\sqrt{GMr}$ decreases with $r$. The total energy decreases, so the last statement is false."
+            },
+            {
+              "type": "MMCQ",
+              "text": "In a Young's double slit experiment, the slits are separated by $d$, the screen is at a distance $D \\gg d$, and monochromatic light of wavelength $\\lambda$ is used. The fringe width is $\\beta = \\lambda D / d$. A thin transparent sheet of thickness $t$ and refractive index $\\mu$ is now placed over one slit, perpendicular to the light. Assume it absorbs nothing and $t$ is small enough that the fringes stay sharp. Which of the following statements are correct?",
+              "options": [
+                "The whole pattern shifts towards the covered slit by $\\frac{(\\mu - 1)tD}{d}$",
+                "The fringe width remains unchanged",
+                "The whole pattern shifts towards the uncovered slit",
+                "If $(\\mu - 1)t = \\lambda$, a bright fringe again lies at the point on the screen opposite the midpoint of the slits"
+              ],
+              "answer": [
+                0,
+                1,
+                3
+              ],
+              "solution": "The sheet adds an optical path $(\\mu - 1)t$ to the covered slit. Zero path difference therefore occurs on that side, shifted by $\\frac{(\\mu-1)tD}{d}$. The fringe spacing still depends only on $\\lambda$, $D$ and $d$. If $(\\mu-1)t = \\lambda$, the shift is exactly $\\beta$, so a bright fringe (the first order) sits at the centre."
+            }
+          ]
+        },
+        {
+          "name": "Section C: Numerical",
+          "posM": 4,
+          "negM": 0,
+          "questions": [
+            {
+              "type": "NUM",
+              "text": "Two blocks of masses $2\\ \\mathrm{kg}$ and $3\\ \\mathrm{kg}$ rest on a smooth horizontal floor. They are joined by a light spring of force constant $120\\ \\mathrm{N/m}$. The blocks are pushed towards each other until the spring is compressed by $10\\ \\mathrm{cm}$, then released from rest at the same instant. What is the speed of the $3\\ \\mathrm{kg}$ block, in $\\mathrm{m/s}$, when the spring first returns to its natural length?",
+              "answer": 0.4,
+              "solution": "No external horizontal force acts, so momentum is conserved: $2v_1 = 3v_2$. The spring energy $\\frac{1}{2}(120)(0.1)^2 = 0.6\\ \\mathrm{J}$ becomes kinetic energy: $$\\frac{1}{2}(2)v_1^2 + \\frac{1}{2}(3)v_2^2 = 0.6.$$ With $v_1 = 1.5v_2$ this is $3.75\\,v_2^2 = 0.6$, so $v_2 = 0.4\\ \\mathrm{m/s}$.",
+              "tolerance": 0.01
+            },
+            {
+              "type": "NUM",
+              "text": "In a singly ionised helium ion, $\\mathrm{He^+}$, the electron makes a transition from the $n = 4$ level to the $n = 2$ level and emits a photon. Using the Bohr model with an ionisation energy of $13.6\\ \\mathrm{eV}$ for hydrogen, and ignoring nuclear recoil and fine structure, what is the energy of this photon in $\\mathrm{eV}$?",
+              "answer": 10.2,
+              "solution": "For a hydrogen-like ion, $E_n = -\\frac{13.6\\,Z^2}{n^2}\\ \\mathrm{eV}$. With $Z = 2$: $$\\Delta E = 13.6 \\times 4 \\left(\\frac{1}{2^2} - \\frac{1}{4^2}\\right) = 54.4 \\times \\frac{3}{16} = 10.2\\ \\mathrm{eV}.$$ This is the same as the hydrogen Lyman-$\\alpha$ line ($n = 2 \\to 1$).",
+              "tolerance": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "sections": [
+        {
+          "name": "Section A: Single Correct",
           "posM": 4,
           "negM": 1,
           "questions": [
             {
-              "type": "MMCQ",
-              "text": "Which of the following is an intensive property?",
-              "options": ["Heat", "Volume", "Pressure", "Mass"],
-              "answer": [2]
+              "type": "SMCQ",
+              "text": "Consider the octahedral complex ion $[\\mathrm{Co(en)_2Cl_2}]^+$, where en is the bidentate ligand ethane-1,2-diamine, $\\mathrm{H_2N{-}CH_2{-}CH_2{-}NH_2}$. Count every geometrical isomer, and for each one also count any non-superimposable mirror images it has. What is the total number of stereoisomers of this complex ion?",
+              "options": [
+                "$2$",
+                "$3$",
+                "$4$",
+                "$5$"
+              ],
+              "answer": 1,
+              "solution": "There are two geometrical isomers. In the trans isomer the two Cl ligands are opposite each other. It has a mirror plane, so it is achiral. In the cis isomer they are adjacent. It has no mirror plane or inversion centre, so it exists as two enantiomers ($\\Delta$ and $\\Lambda$). Total: $1 + 2 = 3$."
             },
             {
               "type": "SMCQ",
-              "image": "https://i.ibb.co/dNR2gvr/Screenshot-1.png",
-              "text": "A spherical billiard ball of mass $m$ and radius $R$ has a moment of inertia $I_{\\text{cm}} = 2mR^2$. The ball is initially at rest on a horizontal table. It is struck by a cue stick at a point $h$ above the centerline, giving it a horizontal velocity $v_0$ and an angular velocity $\\omega_0$. The impulse is sharp and large enough that the effect of friction can be ignored during impact. The coefficient of kinetic friction between the ball and the table is $\\mu_k$. After being struck, the ball slides and spins, but eventually transitions into rolling without slipping at a final speed of $\\frac{9}{10}v_0$. What is the ratio $\\frac{h}{R}$?",
+              "text": "Potassium hexacyanidoferrate(III), $\\mathrm{K_3[Fe(CN)_6]}$, is an octahedral complex. Cyanide is a strong-field ligand that causes pairing in the $t_{2g}$ set wherever possible. Using the spin-only formula $\\mu = \\sqrt{n(n+2)}$ BM, where $n$ is the number of unpaired electrons, what is the expected magnetic moment of the complex anion?",
               "options": [
-                "$\\frac{4}{5}$",
-                "$\\frac{3}{5}$",
-                "$\\frac{2}{5}$",
-                "$\\frac{1}{5}$"
+                "$1.73$ BM",
+                "$5.92$ BM",
+                "$3.87$ BM",
+                "$0$ BM"
               ],
-              "answer": 0
+              "answer": 0,
+              "solution": "Fe is in the $+3$ state, which is $3d^5$. In a strong octahedral field this is low spin, $t_{2g}^5 e_g^0$, with one unpaired electron. So $\\mu = \\sqrt{1 \\cdot 3} = \\sqrt{3} \\approx 1.73$ BM."
+            },
+            {
+              "type": "SMCQ",
+              "text": "A reactant decomposes by first-order kinetics at constant temperature. In one experiment, $90\\%$ of the reactant has decomposed $30$ minutes after the start. Under the same conditions, with the same initial concentration, how long after the start will $99\\%$ of the reactant have decomposed?",
+              "options": [
+                "$45$ min",
+                "$60$ min",
+                "$90$ min",
+                "$99$ min"
+              ],
+              "answer": 1,
+              "solution": "For first-order kinetics, $t = \\frac{1}{k}\\ln\\frac{[A]_0}{[A]}$. Reaching $90\\%$ needs $\\ln 10$, so $k = \\frac{\\ln 10}{30}\\ \\mathrm{min^{-1}}$. Reaching $99\\%$ needs $\\ln 100 = 2\\ln 10$, so it takes twice as long: $60$ min."
+            }
+          ]
+        },
+        {
+          "name": "Section B: Multiple Correct",
+          "posM": 4,
+          "negM": 2,
+          "partial": "proportional",
+          "questions": [
+            {
+              "type": "MMCQ",
+              "text": "Xenon tetrafluoride, $\\mathrm{XeF_4}$, is a colourless crystalline solid. It is made by heating xenon with fluorine in a nickel vessel at about $400^\\circ\\mathrm{C}$. Using VSEPR theory and the usual hybridisation picture for the central atom, which of the following statements about an isolated $\\mathrm{XeF_4}$ molecule are correct?",
+              "options": [
+                "Its shape is square planar",
+                "The xenon atom is $sp^3d^2$ hybridised",
+                "There are two lone pairs on the xenon atom",
+                "The molecule has a non-zero dipole moment"
+              ],
+              "answer": [
+                0,
+                1,
+                2
+              ],
+              "solution": "Xe has 8 valence electrons. Four bond to F and four remain as two lone pairs, so there are 6 electron domains ($sp^3d^2$, octahedral). The lone pairs sit opposite each other, which leaves a square planar shape. The four Xe–F bond dipoles cancel, so the dipole moment is zero. With proportional marking, choosing two of the three correct options scores $\\frac{2}{3}$ of the full marks."
+            },
+            {
+              "type": "MMCQ",
+              "text": "An organic chemist warms each of the following compounds separately with iodine and aqueous sodium hydroxide, and looks for a pale yellow precipitate of iodoform, $\\mathrm{CHI_3}$, with its characteristic antiseptic smell. Which of the compounds give a positive iodoform test? (This question gives no partial marks.)",
+              "options": [
+                "Ethanol",
+                "Methanol",
+                "Propan-2-ol",
+                "Pentan-3-one"
+              ],
+              "answer": [
+                0,
+                2
+              ],
+              "solution": "The test is positive for compounds that have, or can be oxidised to, a $\\mathrm{CH_3CO{-}}$ group, i.e. $\\mathrm{CH_3CH(OH){-}}$ or $\\mathrm{CH_3CO{-}}$. Ethanol is oxidised to ethanal and propan-2-ol to propanone, so both are positive. Methanol has no $\\alpha$-methyl group. Pentan-3-one, $\\mathrm{CH_3CH_2COCH_2CH_3}$, is not a methyl ketone."
+            }
+          ]
+        },
+        {
+          "name": "Section C: Numerical",
+          "posM": 4,
+          "negM": 0,
+          "questions": [
+            {
+              "type": "NUM",
+              "text": "A $0.1$ molal aqueous solution of potassium hexacyanidoferrate(II), $\\mathrm{K_4[Fe(CN)_6]}$, is prepared. Assume the salt is completely dissociated into its constituent ions, the complex ion does not dissociate any further, and the solution is ideal. The cryoscopic constant of water is $K_f = 1.86\\ \\mathrm{K\\,kg\\,mol^{-1}}$. By how many kelvin is the freezing point of the solution lower than that of pure water?",
+              "answer": 0.93,
+              "solution": "$\\mathrm{K_4[Fe(CN)_6]} \\to 4\\mathrm{K^+} + [\\mathrm{Fe(CN)_6}]^{4-}$, so the van 't Hoff factor is $i = 5$. Then $$\\Delta T_f = iK_f m = 5 \\times 1.86 \\times 0.1 = 0.93\\ \\mathrm{K}.$$",
+              "tolerance": 0.01
             }
           ]
         }
@@ -71,36 +230,87 @@
       "name": "Mathematics",
       "sections": [
         {
-          "name": "Section 1",
+          "name": "Section A: Single Correct",
           "posM": 4,
           "negM": 1,
           "questions": [
             {
               "type": "SMCQ",
-              "text": "Evaluate the definite integral: $\\int_0^1 x^2 \\, dx$ using the definition of the Riemann integral.",
+              "text": "Evaluate the definite integral $$I = \\int_0^{\\pi/2} \\frac{\\sin x}{\\sin x + \\cos x}\\,dx.$$ The integrand is continuous on the whole interval, since $\\sin x + \\cos x > 0$ for $0 \\le x \\le \\frac{\\pi}{2}$.",
               "options": [
-                "$\\frac{1}{2}$",
-                "$\\frac{1}{3}$",
-                "$\\frac{2}{3}$",
-                "1"
+                "$\\frac{\\pi}{4}$",
+                "$\\frac{\\pi}{2}$",
+                "$1$",
+                "$\\frac{\\pi}{8}$"
               ],
-              "answer": 1
-            },
-            {
-              "type": "NUM",
-              "text": "Let $f(x) = \\int_0^x \\frac{\\sin(t)}{t} dt$ for $x > 0$. Find $\\lim_{x \\to 0^+} \\frac{f(x)}{x}$.",
-              "answer": 1
+              "answer": 0,
+              "solution": "Substitute $x \\to \\frac{\\pi}{2} - x$: $$I = \\int_0^{\\pi/2} \\frac{\\cos x}{\\cos x + \\sin x}\\,dx.$$ Adding the two forms gives $2I = \\int_0^{\\pi/2} 1\\,dx = \\frac{\\pi}{2}$, so $I = \\frac{\\pi}{4}$."
             },
             {
               "type": "SMCQ",
-              "text": "Two players alternately roll a fair 4-sided die (numbered 1 to 4). The first player rolls first. A player loses if they fail to roll a strictly higher number than the previous player. What is the probability that the first player wins?",
+              "text": "Let $e$ be the base of the natural logarithm. Evaluate the limit $$L = \\lim_{x \\to 0} \\frac{(1 + x)^{1/x} - e}{x}.$$ You may assume the limit exists and is finite.",
               "options": [
-                "$\\frac{3}{8}$",
-                "$\\frac{81}{256}$",
-                "$\\frac{1}{2}$",
-                "$\\frac{175}{256}$"
+                "$-\\frac{e}{2}$",
+                "$\\frac{e}{2}$",
+                "$0$",
+                "$-e$"
               ],
-              "answer": 1
+              "answer": 0,
+              "solution": "$\\frac{1}{x}\\ln(1+x) = 1 - \\frac{x}{2} + \\frac{x^2}{3} - \\cdots$, so $$(1+x)^{1/x} = e \\cdot e^{-x/2 + O(x^2)} = e\\left(1 - \\frac{x}{2} + O(x^2)\\right).$$ Therefore $L = -\\frac{e}{2}$."
+            },
+            {
+              "type": "SMCQ",
+              "text": "Let $\\alpha$ and $\\beta$ be the roots of $x^2 - 6x - 2 = 0$, with $\\alpha > \\beta$. For each positive integer $n$, define $a_n = \\alpha^n - \\beta^n$. Without computing $\\alpha$ or $\\beta$ explicitly, find the value of $$\\frac{a_{10} - 2a_8}{2a_9}.$$",
+              "options": [
+                "$1$",
+                "$2$",
+                "$3$",
+                "$6$"
+              ],
+              "answer": 2,
+              "solution": "Since $\\alpha^2 = 6\\alpha + 2$, multiplying by $\\alpha^8$ gives $\\alpha^{10} = 6\\alpha^9 + 2\\alpha^8$. The same holds for $\\beta$. Subtracting, $a_{10} = 6a_9 + 2a_8$, so $\\frac{a_{10} - 2a_8}{2a_9} = \\frac{6a_9}{2a_9} = 3$."
+            }
+          ]
+        },
+        {
+          "name": "Section B: Multiple Correct",
+          "posM": 4,
+          "negM": 2,
+          "questions": [
+            {
+              "type": "MMCQ",
+              "text": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = x\\,|x|$ for every real number $x$. Consider its continuity, differentiability and symmetry on the whole real line, paying particular attention to the point $x = 0$. Which of the following statements are correct?",
+              "options": [
+                "$f$ is continuous at every real $x$",
+                "$f$ is differentiable at every real $x$",
+                "$f$ is twice differentiable at $x = 0$",
+                "$f$ is an odd function"
+              ],
+              "answer": [
+                0,
+                1,
+                3
+              ],
+              "solution": "$f(x) = x^2$ for $x \\ge 0$ and $-x^2$ for $x < 0$. It is continuous everywhere, and $f'(x) = 2|x|$, which exists everywhere (including $f'(0) = 0$). But $f'(x) = 2|x|$ is not differentiable at $0$, so $f''(0)$ does not exist. Finally, $f(-x) = -x|x| = -f(x)$, so $f$ is odd."
+            }
+          ]
+        },
+        {
+          "name": "Section C: Numerical",
+          "posM": 4,
+          "negM": 0,
+          "questions": [
+            {
+              "type": "NUM",
+              "text": "Ten identical balls are to be distributed among four distinct boxes labelled $B_1, B_2, B_3, B_4$. Every box must receive at least one ball, and no box may receive more than four balls. All ten balls must be used. In how many different ways can this be done?",
+              "answer": 44,
+              "solution": "Let $y_i = x_i - 1$, so $y_1 + y_2 + y_3 + y_4 = 6$ with $0 \\le y_i \\le 3$. Without the upper bound there are $\\binom{9}{3} = 84$ solutions. Subtract those with some $y_i \\ge 4$: fix one such $i$ and set $y_i' = y_i - 4$, giving $\\binom{5}{3} = 10$ each, for $4 \\times 10 = 40$. Two variables cannot both be $\\ge 4$. Answer: $84 - 40 = 44$."
+            },
+            {
+              "type": "NUM",
+              "text": "Three fair six-sided dice, each with faces numbered $1$ to $6$, are rolled together once. Let $P$ be the probability that the largest of the three numbers shown is exactly $5$. Find the value of $216P$.",
+              "answer": 61,
+              "solution": "$P(\\max \\le 5) = \\left(\\frac{5}{6}\\right)^3$ and $P(\\max \\le 4) = \\left(\\frac{4}{6}\\right)^3$, so $$P(\\max = 5) = \\frac{125 - 64}{216} = \\frac{61}{216}.$$ Hence $216P = 61$."
             }
           ]
         }
